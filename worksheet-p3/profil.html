@@ -72,7 +72,23 @@
 
                 <section id="add-wishlist">
                     <h2>Add Wishlist</h2>
-                    
+                    <form action="/submit-wishlist" method="post">
+                        <p>
+                            <label for="country">Country:</label>
+                            <input type="text" id="country" name="country" required>
+                        </p>
+
+                        <p>
+                            <label for="place">Place:</label>
+                            <input type="text" id="place" name="place" required>
+                        </p>
+
+                        <p>
+                            <label for="things-to-do">Things to do:</label>
+                            <input type="text" id="things-to-do" name="things-to-do" required>
+                        </p>
+                        <button type="submit">Add to Wishlist</button>
+                    </form>
                 </section>
             </main>
 
