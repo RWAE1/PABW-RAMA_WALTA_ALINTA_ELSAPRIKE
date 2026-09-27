@@ -13,10 +13,9 @@ My page topic: A wishlist of my dream countries around the world.
 - Two main sections: My Dream Destinations & Add a New Wishlist.
 - Table columns: Country, Place, Things to do.
 - Form columns: Country, Place, Things to do.
-- Image: 
-  1. bigben.jpg
-  2. royalmile.jpg
-  3. fushimiinaritaisha.jpg
+- Image: 1. bigben.jpg
+         2. royalmile.jpg
+         3. fushimiinaritaisha.jpg
 
 ## Note on AI use
 
