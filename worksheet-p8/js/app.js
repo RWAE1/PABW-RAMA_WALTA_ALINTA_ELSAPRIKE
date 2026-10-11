@@ -33,11 +33,10 @@ const pendingTrips = destinationList.filter((dest) => dest.visited === false);
 console.table(pendingTrips);
 
 const targetTrip = destinationList.find((dest) => dest.place === "London");
-console.log("Found Trip:", targetTrip);
+console.log("Found Trip:", targetTrip); 
 
 const placeNames = destinationList.map((dest) => dest.place);
 console.log("List of Places:", placeNames);
 
-// 5. Safe Sort: Sorting a COPY of the array alphabetically by country without mutating the original
 const sortedDestinations = [...destinationList].sort((a, b) => a.country.localeCompare(b.country));
 console.table(sortedDestinations);
