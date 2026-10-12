@@ -14,10 +14,12 @@ My page topic: A wishlist of my dream countries around the world.
 - Table columns: Country, Place, Things to do.
 - Form columns: Country, Place, Things to do.
 - Images:
-    1. bigben.jpg
-    2. royalmile.jpg
-    3. fushimiinaritaisha.jpg
-    4. DreaminLogo.png
+    <ol type="1">
+        <li>bigben.jpg</li>
+        <li>royalmile.jpg</li>
+        <li>fushimiinaritaisha.jpg</li>
+        <li>DreaminLogo.png</li>
+    </ol>
 
 ## Meeting 3 · CSS Implementation
 
@@ -47,13 +49,16 @@ Upgrade with Bootstrap 5 for Mobile Responsiveness.
 - Table columns: Country, Place, Things to do.
 - Form columns: Country, Place, Things to do.
 - Images:
-    1. bigben.jpg
-    2. royalmile.jpg
-    3. fushimiinaritaisha.jpg
-    4. Mosi-oa-tunya.jpeg
-    5. CinqueTerre.jpeg
+    <ol type="1">
+        <li>bigben.jpg</li>
+        <li>royalmile.jpg</li>
+        <li>fushimiinaritaisha.jpg</li>
+        <li>Mosi-oa-tunya.jpeg</li>
+        <li>CinqueTerre.jpeg</li>
+        <li>DreaminLogo.png</li>
+    </ol>
 
-Key Updates: Implemented Bootstrap 5 via Content Delivery Network (CDN), replaced manual CSS with Bootstrap utility classes, created a responsive nested grid for the image gallery, and optimized the layout for mobile devices. also i add 2 content Mosi-oa-tunya and cinque terre.
+Key Updates: Implemented Bootstrap 5 via Content Delivery Network (CDN), replaced manual CSS with Bootstrap utility classes, created a responsive nested grid for the image gallery, and optimized the layout for mobile devices. I have added two more locations: Cinque Terre and Mosi-oa-tunya.
 
 ## Meeting 8 · Implementing JavaScript into the Profile Page
 
@@ -66,12 +71,16 @@ Upgraded the static HTML page into a dynamic application.
 - Table columns: Country, Place, Things to do.
 - Form columns: Country, Place, Things to do.
 - Images:
-    1. bigben.jpg
-    2. royalmile.jpg
-    3. fushimiinaritaisha.jpg
-    4. Mosi-oa-tunya.jpeg
-    5. CinqueTerre.jpeg
+    <ol type="1">
+        <li>bigben.jpg</li>
+        <li>royalmile.jpg</li>
+        <li>fushimiinaritaisha.jpg</li>
+        <li>Mosi-oa-tunya.jpeg</li>
+        <li>CinqueTerre.jpeg</li>
+        <li>DreaminLogo.png</li>
+    </ol>
 
+**Key Updates**
 - Script Connection: Connected the `app.js` file to the HTML using `<script type="module">`.
 - Data Structures: The content of the page was transferred from HTML to JavaScript variables. For the profile identity, I made an object called "journeyData," and for the wishlist data, I made an array of objects called "destinationList."
 - Pure Functions: Added `createHeader` and `formatDestinations` to process the data without changing the original variables.
