@@ -26,17 +26,17 @@ My page topic: A wishlist of my dream countries around the world.
 During this meeting, I created a style.css file to style my page.
 
 **Typography & Fonts**
-* Primary Font: Figtree (sans-serif fallback)
-* Font Weights: 300..900 (400 for subheadings, 600 for navigation/tables, bold for buttons)
-* Line Height: 1.6 (body), 1.4 (headers)
+- Primary Font: Figtree (sans-serif fallback)
+- Font Weights: 300..900 (400 for subheadings, 600 for navigation/tables, bold for buttons)
+- Line Height: 1.6 (body), 1.4 (headers)
 
 **Color Palette** (I use the HSL Model)
-* Backgrounds: `hsla(0, 40%, 94%, 0.5)` (body) and `hsl(0, 0%, 100%)` (sections)
-* Primary Text: `hsl(200, 90%, 4%)` (body) and `hsl(0, 0%, 20%)` (titles)
-* Secondary Text: `hsl(208, 7%, 46%)`
-* UI Elements: `hsl(210, 10%, 23%)`
-* Hover States: `#4e7194` (buttons) and `hsl(0, 40%, 98%)` (links)
-* Table Shading: `hsl(210, 17%, 98%)` (even rows) and `hsl(210, 16%, 93%)` (row hover)
+- Backgrounds: `hsla(0, 40%, 94%, 0.5)` (body) and `hsl(0, 0%, 100%)` (sections)
+- Primary Text: `hsl(200, 90%, 4%)` (body) and `hsl(0, 0%, 20%)` (titles)
+- Secondary Text: `hsl(208, 7%, 46%)`
+- UI Elements: `hsl(210, 10%, 23%)`
+- Hover States: `#4e7194` (buttons) and `hsl(0, 40%, 98%)` (links)
+- Table Shading: `hsl(210, 17%, 98%)` (even rows) and `hsl(210, 16%, 93%)` (row hover)
 
 ## Meeting 4 · Responsive Bootstrap Profile Page
 
@@ -85,10 +85,12 @@ Upgraded the static HTML page into a dynamic application.
 - Data Structures: The content of the page was transferred from HTML to JavaScript variables. For the profile identity, I made an object called "journeyData," and for the wishlist data, I made an array of objects called "destinationList."
 - Pure Functions: Added `createHeader` and `formatDestinations` to process the data without changing the original variables.
 - Array Methods:
-    1. `filter`: This method separates and shows just the trips that haven't been visited yet.
-    2. `find`: This function is used to look for and retrieve a single destination (London) from the list.
-    3. `map`: Used to create a new list with only the place names.
-    4. `sort`: To order the nations alphabetically without altering the original array, use it in conjunction with the spread operator (`[...]`).
+    <ol type="1">
+        <li> `filter`: This method separates and shows just the trips that haven't been visited yet.</li>
+        <li> `find`: This function is used to look for and retrieve a single destination (London) from the list.</li>
+        <li> `map`: Used to create a new list with only the place names.</li>
+        <li> `sort`: To order the nations alphabetically without altering the original array, use it in conjunction with the spread operator (`[...]`).</li>
+    </ol>
 
 ## Note on AI use
 
