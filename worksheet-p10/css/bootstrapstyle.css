@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    font-family: "Figtree", sans-serif;
+    background-color: hsla(0, 40%, 94%, 0.5);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.hover-zoom {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2) !important;
+}
