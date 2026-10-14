@@ -67,3 +67,70 @@ filterRow.addEventListener('click', (event) => {
 
     render(filteredList);
 });
+
+const wishlistForm = document.querySelector('form');
+const countryInput = document.querySelector('#country');
+const placeInput = document.querySelector('#place');
+const activityInput = document.querySelector('#things-to-do');
+const submitButton = wishlistForm.querySelector('button[type="submit"]');
+
+submitButton.disabled = true;
+
+function isFormValid() {
+    return countryInput.value.trim() !== "" && 
+           placeInput.value.trim() !== "" && 
+           activityInput.value.trim() !== "";
+}
+
+[countryInput, placeInput, activityInput].forEach(input => {
+    input.addEventListener('input', () => {
+        if (input.value.trim() === "") {
+            input.setAttribute("aria-invalid", "true");
+            input.classList.add("is-invalid");
+            input.classList.remove("is-valid");
+        } else {
+            input.removeAttribute("aria-invalid");
+            input.classList.remove("is-invalid");
+            input.classList.add("is-valid");
+        }
+        
+        submitButton.disabled = !isFormValid();
+    });
+});
+
+wishlistForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    if (!isFormValid()) {
+        const firstInvalid = [countryInput, placeInput, activityInput].find(input => input.value.trim() === "");
+        if (firstInvalid) firstInvalid.focus();
+        return;
+    }
+
+    const newTrip = {
+        country: countryInput.value.trim(),
+        place: placeInput.value.trim(),
+        activity: activityInput.value.trim(),
+        visited: false
+    };
+
+    destinationList.push(newTrip);
+
+    const activeBtn = document.querySelector('#filter button.active');
+    const category = activeBtn ? activeBtn.dataset.category : 'all';
+    
+    const filteredList = destinationList.filter((dest) => {
+        if (category === 'all') return true;
+        if (category === 'visited') return dest.visited === true;
+        if (category === 'unvisited') return dest.visited === false;
+    });
+
+    render(filteredList);
+    
+    wishlistForm.reset();
+    submitButton.disabled = true; 
+    [countryInput, placeInput, activityInput].forEach(input => {
+        input.classList.remove('is-valid', 'is-invalid');
+        input.removeAttribute("aria-invalid");
+    });
+});
