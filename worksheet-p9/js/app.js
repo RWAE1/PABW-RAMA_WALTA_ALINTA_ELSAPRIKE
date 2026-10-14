@@ -19,7 +19,7 @@ const formatDestinations = (list) => list.join(" · ");
 console.log(createHeader(journeyData));
 console.log(formatDestinations(journeyData.destinations));
 
-const destinationList = [
+export const destinationList = [
   { country: "United Kingdom", place: "London", activity: "Take a walk past Big Ben", visited: true },
   { country: "Scotland", place: "Edinburgh", activity: "Walk the cobblestones of the Royal Mile", visited: false },
   { country: "Japan", place: "Kyoto", activity: "Visit the Fushimi Inari Taisha", visited: false },
