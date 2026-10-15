@@ -1,4 +1,6 @@
-const URL = 'https://api.npoint.io/f3f9fa85806362c64872'; 
+// const URL = 'https://api.npoint.io/f3f9fa85806362c64872'; 
+
+const URL = '../destinations.json';
 
 export async function loadDestinations() {
     try {

@@ -1,0 +1,7 @@
+[
+  { "country": "United Kingdom", "place": "London", "activity": "Take a walk past Big Ben", "visited": false },
+  { "country": "Scotland", "place": "Edinburgh", "activity": "Walk the cobblestones of the Royal Mile", "visited": false },
+  { "country": "Japan", "place": "Kyoto", "activity": "Visit the Fushimi Inari Taisha", "visited": false },
+  { "country": "Zimbabwe", "place": "Mosi-oa-tunya", "activity": "Witness the majestic Victoria Falls", "visited": false },
+  { "country": "Italy", "place": "Cinque Terre", "activity": "Enjoy the Vibe of this Colorfull village", "visited": false }
+]
