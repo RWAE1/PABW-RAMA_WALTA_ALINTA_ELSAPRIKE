@@ -3,8 +3,17 @@ import { destinationList } from './app.js';
 const tableBody = document.querySelector('#wishlist-body');
 const emptyMessage = document.querySelector('#empty-message');
 
-function render(list) {
+export function showLoading() {
+    tableBody.innerHTML = '<tr><td colspan="3" class="text-center text-muted fw-bold">Loading your destinations...</td></tr>';
+    emptyMessage.hidden = true;
+}
 
+export function showFailure(errorMessage) {
+    tableBody.innerHTML = `<tr><td colspan="3" class="text-center text-danger fw-bold">Failed to load data: ${errorMessage}</td></tr>`;
+    emptyMessage.hidden = true;
+}
+
+export function render(list) {
     tableBody.textContent = ""; 
 
     if (list.length === 0) {
@@ -33,7 +42,6 @@ function render(list) {
     });
 }
 
-render(destinationList);
 
 const filterRow = document.querySelector('#filter');
 
