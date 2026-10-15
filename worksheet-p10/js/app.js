@@ -43,3 +43,14 @@ console.table(sortedDestinations);
 
 import { loadDestinations } from './api.js';
 loadDestinations();
+
+async function init() {
+    try {
+        const data = await loadDestinations();
+        console.log("Successfully fetched data:", data);
+    } catch (error) {
+        console.error("App caught an error:", error);
+    }
+}
+
+init();

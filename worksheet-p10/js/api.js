@@ -1,13 +1,18 @@
 const URL = 'https://api.npoint.io/f3f9fa85806362c64872'; 
 
 export async function loadDestinations() {
-    const response = await fetch(URL);
+    try {
+        const response = await fetch(URL);
 
-    console.log('status', response.status, 'ok', response.ok);
+        console.log('status', response.status, 'ok', response.ok);
 
-    if (!response.ok) {
-        throw new Error('status ' + response.status);
-    }
+        if (!response.ok) {
+            throw new Error('status ' + response.status);
+        }
     
-    return response.json();
+        return await response.json();
+    } catch (error) {
+        console.error('failed to load', error.message);
+        throw error;
+    }
 }
