@@ -117,6 +117,31 @@ Implementing DOM, Mounting Data into the Page and Responding to the User.
 - **Event Delegation:** Set up one click listener on the `#filter` parent container to handle the "All" "Visited" and "Not Visited" buttons. This approach uses memory and ensures that any new buttons added later are automatically managed without additional code.
 - **Form Validation & Submission:** Stopped the default form behavior with `event.preventDefault()` to keep the page from reloading. Used validation that only checks fields after the user has interacted with them. Invalid fields get the Bootstrap `is-class (shown in red) while valid ones get `is-valid` (shown in green). New wishlist items are added to the array. The table updates instantly giving immediate feedback.
 
+## Meeting 10 · Asynchronous JavaScript: fetch, Promise, and JSON
+
+Implementing Asynchronous JavaScript to fetch data and manage interface states.
+
+- Page title: Rafiq's Journey That Was Meant to Be.
+- Description: Wishlist of countries I will visit in the future <إِنْ شَاءَ ٱللَّٰهُ>.
+- Navigation links: Home, Destinations, Add Wishlist.
+- Two main sections: My Dream Destinations & Add a New Wishlist.
+- Table columns: Country, Place, Things to do.
+- Form columns: Country, Place, Things to do.
+- Images:
+    <ol type="1">
+        <li>bigben.jpg</li>
+        <li>royalmile.jpg</li>
+        <li>fushimiinaritaisha.jpg</li>
+        <li>Mosi-oa-tunya.jpeg</li>
+        <li>CinqueTerre.jpeg</li>
+        <li>DreaminLogo.png</li>
+    </ol>
+
+**Key Updates**
+- **Data Layer Separation (`js/api.js`):** Created a dedicated API module to handle the asynchronous network request using `fetch()`. Configured a single URL source and enforced strict status validation using `response.ok` before reading response bodies.
+- **Error Handling & Interface States:** Implemented robust `async/await` flows paired with a comprehensive `try/catch` error management architecture. Handled all four critical interface states (Loading, Success, Failure, and Empty) to ensure the application never fails silently.
+- **CORS Fallback Strategy:** Configured a local `destinations.json` data source as a robust fallback to seamlessly bypass browser CORS security policies during local development.
+
 ## Note on AI use
 
 I wrote all the code entirely by myself.
