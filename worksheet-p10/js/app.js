@@ -40,3 +40,6 @@ console.log("List of Places:", placeNames);
 
 const sortedDestinations = [...destinationList].sort((a, b) => a.country.localeCompare(b.country));
 console.table(sortedDestinations);
+
+import { loadDestinations } from './api.js';
+loadDestinations();
